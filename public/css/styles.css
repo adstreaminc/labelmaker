@@ -1,0 +1,231 @@
+/***
+ *
+ * Icon fonts
+ *
+ */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-search:before, 
+.icon-repeat:before, 
+.icon-print:before, 
+.icon-trash:before, 
+.icon-house:before, 
+.icon-barcode:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-search:before {
+	content: "\e004";
+}
+.icon-repeat:before {
+	content: "\f01e";
+}
+.icon-print:before {
+	content: "\e000";
+}
+.icon-trash:before {
+	font-size: 20px;
+	content: "\f014";
+}
+.icon-house:before {
+	content: "\e001";
+}
+.icon-barcode:before {
+	content: "\e002";
+}
+
+/***
+ *
+ * Global overrides
+ *
+ */
+ 
+html{
+	overflow-y: auto;
+}
+
+body{
+	background: #171717;
+	color: #fff;
+}
+
+li{
+	list-style: none;
+}
+
+/***
+ *
+ * Sidebar
+ *
+ */
+
+
+#sidebar{
+	padding-top: 48px;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-right: 1px solid #252525;
+}
+
+.search-bar{
+	position: fixed;
+	top: 0;
+	z-index: 5;
+}
+
+.search{
+	display: inline-block;
+	border: none;
+	line-height: 48px;
+	height: 48px;
+	padding: 0 16px;
+}
+
+.search:focus{
+	outline: none;
+}
+
+.product-list{
+	overflow-y: scroll;
+	height: 100%;
+}
+
+.product-list li{
+	position: relative;
+}
+
+.product-list a{
+	padding: 12px;
+	border-bottom: 1px solid #252525; 
+	color: #777;
+}
+
+.product-list a:hover{
+	background: #66528A;
+	color: #fff;
+	text-decoration: none;
+}
+
+/***
+ *
+ * Drop Area
+ *
+ */
+
+#drop-zone{ 
+	display: none;
+	overflow-y: scroll;
+}
+
+#drop-zone.hover{
+	border: 1px solid #5793A3;
+	margin-left: -2px;
+}
+
+#drop-zone tbody td,
+#drop-zone thead td{
+	padding: 12px;
+	color: #777;
+}
+
+#drop-zone tbody tr:nth-child(odd){
+	background: #121212;
+}
+
+#drop-zone tbody tr:hover{
+	background: #252525;
+}
+
+.remove-button{
+	line-height: 0;
+	color: red;
+	display: none;
+}
+
+.qty{
+	width: 50px;
+}
+
+/***
+ *
+ * Objects
+ *
+ */
+ 
+.section-header{
+	clear: both;
+	overflow: hidden;
+	border-bottom: 1px solid #252525;
+	border-left: 1px solid #252525;
+	padding-left: 12px;
+}
+
+.button{
+	padding: 12px 16px;
+	background: #66528A;
+	color: #fff;
+}
+
+.print-button{
+	background: #5793A3;
+}
+
+.barcode-button{
+	background: #E06B63
+}
+
+.home-button{
+	background: #167D54;
+}
+
+.ajax-load{
+	display: none;
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -43px;
+}
+
+#product-info{
+	display: none;
+}
+
+#preview-image{
+	margin-top: 48px;
+}
+
+.product-name{
+	margin-top: 48px;
+}
+
+.yes,
+.no{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	right: 12px;
+	top: 20px;
+}
+
+.yes{
+	background: green;
+}
+
+.no{
+	background: red;
+}
